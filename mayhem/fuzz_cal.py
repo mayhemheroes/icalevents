@@ -12,7 +12,7 @@ def TestOneInput(data):
     try:
         events(string_content=fdp.ConsumeRemainingBytes())
     except (TypeError, IndexError, AttributeError):
-        if random.random() > 0.999:
+        if random.random() > 0.99:
             raise
         return -1
     except ValueError as e:
